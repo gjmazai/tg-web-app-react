@@ -1,10 +1,14 @@
 import React from 'react'
 import "./Header.css";
+import { useTelegram } from '../hooks/useTelegram';
 
 const Header = (props) => {
+	const {user} = useTelegram();
+
   return (
-	 <header className='Header'>Здесь вы можете записаться на стирку
-	 <span className='username'>{props.tg.initDataUnsafe?.user?.username}</span>
+	 <header className='Header'>
+		<p>Здесь вы можете записаться на стирку</p> 
+	 	<span className='username'>{user?.username}</span>
 	 </header>
   )
 }
