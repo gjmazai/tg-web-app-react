@@ -6,7 +6,7 @@ export function useTelegram() {
 	};
 
 	const onToogleButton = () => {
-		if (tg.MainButton.isVisble) {
+		if (tg.MainButton.isVisible) {
 			tg.MainButton.hide();
 		} else {
 			tg.MainButton.show();

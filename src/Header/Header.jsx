@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
 	 <header className='Header'>
 		<p>Здесь вы можете записаться на стирку</p> 
-	 	<span className='username'>{user?.username}</span>
+	 	<span className='username'>{user.username}</span>
 	 </header>
   )
 }
